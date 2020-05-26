@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap" rel="stylesheet">
+    <title>KNOTRIS - Contact</title>
+    <meta name="description" content="Matthew Choat is a professional
+                software engineer and specializing in full stack development.
+                He has extensive experience with HTML/CSS, JavaScript, Node.js, React, and Java">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="header" id="myHeader">
+            <img id=knotlogo src="assets/knotris.png" height=30px>
+            <button onclick="window.location.href='index.html'">KNOTRIS</button>
+            <button id="start-button">Start / Pause</button>
+            <button onclick="window.location.href='index.html'">New Game</button>
+            <button onclick="window.location.href='contact.html'" target=blank>Contact</button>
+            <i class="fa fa-bars"></i>
+            </a>
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("myTopnav");
+                    if (x.className === "header") {
+                        x.className += " responsive";
+                    } else {
+                        x.className = "header";
+                    }
+                }
+            </script>
+            <script>
+                window.onscroll = function() {
+                    stickyFunction()
+                }
+
+                ;
+                var header = document.getElementById("myHeader");
+                var sticky = header.offsetTop;
+
+                function stickyFunction() {
+                    if (window.pageYOffset > sticky) {
+                        header.classList.add("sticky");
+                    } else {
+                        header.classList.remove("sticky");
+                    }
+                }
+            </script>
+        </div>
+    </nav>
+    <br class="clear" />
+    <div class="fullscreen">
+        <h2>Let's Get in Contact</h3>
+            <p class=gall>This web app was created by Matthew Choat. He is currently looking to gain more real-world experience by collaborating on open-source development projects. Please submit the form below with any potential inquiries:</p>
+
+            <div class="wpcf7" id="wpcf7-f156-p143-o1 formwrap">
+                <form action="/?page_id=143#wpcf7-f156-p143-o1" method="post" class="wpcf7-form" novalidate="novalidate">
+                    <div style="display: none;">
+                        <input type="hidden" name="_wpcf7" value="156">
+                        <input type="hidden" name="_wpcf7_version" value="3.7.2">
+                        <input type="hidden" name="_wpcf7_locale" value="en_US">
+                        <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f156-p143-o1">
+                        <input type="hidden" name="_wpnonce" value="d1da331d93">
+                    </div>
+                    <p>
+                        <span class="wpcf7-form-control-wrap Name">
+                     <input type="text" name="Name" value="" size="40" class="nameinput wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Name">
+                  </span>
+                        <span class="wpcf7-form-control-wrap Email">
+                    <input type="email" name="Email"  size="40" class="emailinput wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email">
+                  </span>
+                        <span class="wpcf7-form-control-wrap Subject flat">
+                    <select name="Subject" class="indent wpcf7-form-control wpcf7-select wpcf7-validates-as-required" aria-required="true" aria-invalid="false">
+                      <option value="General">General Request</option>
+                      <option value="Booking">Work Request</option>
+                    </select>
+                  </span>
+                        <span class="wpcf7-form-control-wrap Message">
+                    <textarea name="Message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Message"></textarea>
+                  </span>
+                        <input type="submit" value="Send" class="wpcf7-form-control wpcf7-submit btn">
+                        <img class="ajax-loader" src="http://www.jordancundiff.com/wp-content/plugins/contact-form-7/images/ajax-loader.gif" alt="Sending ..." style="visibility: hidden;">
+                    </p>
+                    <div class="wpcf7-response-output wpcf7-display-none">
+                    </div>
+                </form>
+            </div>
+
+            <p class=gall>Connect with me on LinkedIn:
+                <a href="https://linkedin.com/in/matthew-choat" class="contact-link" target=blank>
+                    <img src="assets/linkedin.png" alt="Linked In" height="30px" />
+                </a>
+                <br /> and Browse my GitHub repository:
+                <a href="https://github.com/matthewchoat" class="contact-link" target=blank>
+                    <img src="assets/github.png" alt="GitHub" height="30px" />
+                </a>
+            </p>
+    </div>
+</body>
+
+</html>
