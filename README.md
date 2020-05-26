@@ -1,4 +1,4 @@
-# knotris
+# KNOTRIS
 Welcome to "KNOTRIS". This is a single page application created to practice JavaScript and CSS styling.
 We are still in the process styling the game pieces, fixing various bugs, and adding level and score saving functionality.
 
