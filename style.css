@@ -107,7 +107,7 @@ figure {
     display: flex;
     flex-direction: column;
     font-family: 'El Messiri', sans-serif;
-    font-size: 1.2em;
+    font-size: 1.0em;
     color: white;
     align-self: center;
     background-image: linear-gradient(to top, #063d1cbb 0%, #c2d3d3bd 100%);
@@ -115,8 +115,18 @@ figure {
     border-radius: 25px;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a: visited {
+    color: white;
+    text-decoration: none;
+}
+
 figcaption {
-    align-self: left;
+    align-self: center;
 }
 
 .container {
@@ -233,6 +243,14 @@ figcaption {
     margin-left: auto;
     margin-right: auto;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.controls {
+    height: 20px;
+    width: auto;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
