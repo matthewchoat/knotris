@@ -1,6 +1,6 @@
 window.addEventListener("keydown", function(e) {
     // space and arrow keys
-    if ([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
+    if ([32, 37, 38, 39, 40, 87, 65, 83, 68].indexOf(e.keyCode) > -1) {
         e.preventDefault();
     }
 }, false);
@@ -90,18 +90,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function control(e) {
         if (timerId != null) { //prevents moving pieces when a game is not active
-            if (e.keyCode === 37) {
+            if (e.keyCode === 37 || e.keyCode === 65) {
                 moveLeft()
-            } else if (e.keyCode === 38) {
+            } else if (e.keyCode === 38 || e.keyCode === 87) {
                 rotate()
-            } else if (e.keyCode === 39) {
+            } else if (e.keyCode === 39 || e.keyCode === 68) {
                 moveRight()
-            } else if (e.keyCode === 40) {
+            } else if (e.keyCode === 40 || e.keyCode === 83) {
                 moveDown()
+            } else if (e.keyCode === 32) {
+                moveDrop()
             }
         }
     }
     document.addEventListener('keyup', control)
+
+    //move drop function
+    function moveDrop() {
+        undraw()
+        currentPosition += width
+        draw()
+        freeze()
+    }
 
     //move down function
     function moveDown() {
